@@ -27,5 +27,5 @@ export const counterReducer = createReducer(
             ...state,
             counter : state.counter + action.value
         }
-    })
+    }),
   );

@@ -13,5 +13,7 @@ export class CounterOutputComponent {
   constructor(private store: Store<{counter: CounterState}>){}
   ngOnInit(){
     this.counter$ = this.store.select('counter');
+    console.log("counter calledd");
+    
   }
 }

@@ -13,9 +13,12 @@ export class CounterCustomInputComponent implements OnInit {
   constructor(private store:Store<{counter: CounterState}>) { }
 
   ngOnInit(): void {
+    console.log("text called");
+    
   }
   customIncrement(){
     this.store.dispatch(customIncrement({value: +this.value}))
   }
+
 
 }
